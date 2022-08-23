@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: "Kumbh Sans", sans-serif;
     
+    
 }
 body{
     background-color: hsl(185, 75%, 39%);
@@ -102,16 +103,25 @@ h2, h3{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    
 }
+
 @media (min-width: 1140px)
 {
+    
     img.bg1{
+    overflow: auto;
+    resize: both;
+
     position: fixed;
     left: 15%;
     transform: translate(-50%, -50%);
     }
 
     img.bg2{
+        resize: both;
+        overflow: auto;
+
         position: fixed;
         left: 15%;
         transform: translate(50%, 40%);
@@ -120,13 +130,15 @@ h2, h3{
 @media (max-width:1139px)
 {
     img.bg1{
+
         position: fixed;
-        left: -110%;
-        transform: translateY(-65%);
+        left: -180%;
+        transform: translateY(-55%);
         z-index: -1;
     }
     
     img.bg2{
+
         position: fixed;
         left: 35%;
         transform: translateY(35%);
